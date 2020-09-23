@@ -1,0 +1,108 @@
+.header{
+    width: 100%;
+    height: 100px;
+}
+
+.header .logo{
+    margin-left: 220px;
+    float: left;
+}
+.header .logo img{
+    height: 100px;
+}
+.header .nav{
+    float: right;
+}
+
+.header .nav ul{
+    float: right;
+    margin-right: 80px;
+}
+
+.header .nav li{
+    float: left;
+    margin-left: 20px;
+    line-height: 100px;
+}
+.header .nav li a{
+    font-size: 20px;
+    color: #333;
+
+}
+
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+    height: 800px;
+}
+.container{
+    width: 100%;
+    margin-top: 80px;
+}
+.container .index_box{
+    width: 1200px;
+    margin: 0 auto;
+}
+.index_01{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.index_01 .block{
+    width: 560px;
+    background-color: #f6f5fc;
+    height: 450px;
+    margin-bottom: 30px;
+    display: inline-flex;
+    border-radius: 10px;
+}
+
+.index_01 .block .left_block{
+    width: 100px;
+    margin-left: -25px;
+    display: inline-block;
+}
+
+.index_01 .block .left_block em{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url("");
+}
+.index_01 .block .left_block p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.index_01 .block .right_block{
+
+    display: inline;
+    color: #7064cd;
+    font-size: 18px;
+    padding: 40px;
+    line-height: 35px;
+}
+.index_02 .title{
+    text-align: center;
+}
+.index_02 .title p{
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+.index_02 .title span{
+    font-size: 25px;
+    color: #7064cd;
+    display: block;
+}
+
+.index_02 .title .line{
+    background-color: #7064cd;
+    display: block;
+    width: 100px;
+    height: 10px;
+    margin: 10px auto;
+}
