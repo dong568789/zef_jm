@@ -1,0 +1,418 @@
+
+@media screen and (max-width: 1200px) {
+
+    .header{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 999;
+        height: auto;
+        box-shadow: 0 0.05rem 0.15rem 0 rgba(0,0,0,.1);
+        width: 100%;
+    }
+
+    .header .left_box{
+        width: 100%;
+        height: 60px;
+        float: none;
+    }
+
+    .header .logo{
+        float: left;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .header .logo img{
+        height: 60px;
+        margin-left:20px;
+    }
+
+    .header .logo em{
+        width: 40px;
+        height: 40px;
+        float: right;
+        margin-top: 10px;
+    }
+
+    .header .logo .open {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAABiElEQVR4Xu3asQ3CUBTF0GRbCjagZgMKtgWxQKRfRA5PhxrJfDsXFJF980oN7CkdfBMgvggEECA2EOMtQIDYQIy3AAFiAzHeAgSIDcR4CxAgNhDjLUCA2ECMt4B/C3C7Pz7xZ740/v16Ll3US2/+nVyA4/4CxPsQQIDYQIy3AAFiAzHeAqYHiM83Dr98HzDOQHwgAQSIDcR4CxAgNhDjLUCA2ECMtwABYgMx3gIEiA3EeAsQIDYQ4y1AgNhAjLcAAWIDMd4CBIgNxPjlBXg08biYpyLiK1oAAWIDMd4CBIgNxHgLECA2EONPX0B8vnH45RuxcQbiAwkgQGwgxluAALGBGG8BAsQGYrwFCBAbiPEWIEBsIMZbgACxgRhvAQLEBmK8BQgQG4jxFiBAbCDGLy/As6HHxU7/U14AAeIvDQEEuLSB+MP5DRAgNhDjLWB6gPh84/DLN2LjDMQHEkCA2ECMtwABYgMx3gIEiA3EeAsQIDYQ4y1AgNhAjLcAAWIDMd4CBIgNxPgv/LpgYch4Xn8AAAAASUVORK5CYII=) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .header .logo .close {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAACEElEQVR4nO3cMW7CQBCFYSQK7sENqGhpXPgcFLuW14KUsQ3KGTjGHoWee3ADUpFEQIjXXjOzyv9J9G/eKODY1k4mAAAAAAAAAAAAAAJ476du266Ma6zZ7LM8P8ykM/WV54eZ2ewz4xrrtu3Kez+VzvRU8fYxL6r2aF1zuX5MVZ/WdreQzhZqbXcLU9Wnn7MUVXss3j7m0tke8t5Pb8v/WkJZn8vyfSmdsauyfF+asj4/mqWo2qPKvwS3bVePAqe2hGflXz9u266kc94xrrHPQqewhC7lW9dcjGusdNY7ZrPP/gqueQldy7euuZjNPpPOeyfPD7PbH61UlhBUflWf1F7Zre1u0XkQJUsIKr+sz+qv6EIHklxCSlmDpDBYChkH0Tyg5mxRaRxUY6ZRaRpYU5aX0jC4hgyiJAv49+VfSRRB+TdeWQjl/+IVxVD+H8YsiPI7GqMoyg8UszDK7ylGcZQ/0JACKT+SPkVSfmShhVL+CEKWQPkjibUEyh9g6BIoP4K+S6D8iEKXQPmRsQBBfAUJ4kdYEJehgvhHTBC3IgRxM04Qt6MF8UBGEI8kBfFQXhCvpQjixSxBvJooiJdzBfF6uiANBWjIIELT4JqyvITGgTVmGoXmQTVniyKFAVPI2EtKg6WUtRMO6xDEcTXCOLBJGEeWCePQPmEcW6kAB7cqwNHFAAAAAAAAAAAAAL59Anxvrj7MiqxpAAAAAElFTkSuQmCC) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .header .logo .flag{
+        display: none;
+    }
+    .header .nav {
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        height: auto;
+        background-color: #686c7b;
+        z-index: 988;
+    }
+    #home div.open{
+        display: block;
+    }
+
+    #home div.close{
+        display: none;
+    }
+    .header .nav li span{
+        display: none;
+    }
+
+    .header .nav li em{
+        display: none;
+    }
+
+    .header .nav ul li{
+        height: 60px;
+        line-height: 60px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .header .nav li a{
+        margin-top: 0px;
+        padding-top: 0px;
+        height: auto;
+        padding-left: 50px;
+        border-bottom: 1px solid #d5d8e0;
+    }
+
+    .banner{
+
+    }
+
+    .banner .banner_01{
+        background: none;
+    }
+
+    .banner_01 .top{
+        padding: 20px;
+    }
+    .banner_01 h2{
+        font-size: 26px;
+    }
+
+    .banner_01 p{
+        font-size: 16px;
+    }
+
+    .banner_01 .bottom{
+        margin: 20px;
+    }
+
+    .banner .banner_box{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        margin-top: 6%;
+    }
+
+    .banner_03 .top{
+        margin-left: 20px;
+    }
+
+    .banner_03 .top h2{
+        font-size: 46px;
+    }
+
+    .banner_03 .top .text1{
+        font-size: 23px;
+    }
+    .banner_03 .top .text2{
+        font-size: 12px;
+    }
+
+    .banner .swiper-container, .news_banner{
+        margin-top: 60px;
+    }
+
+    .banner .swiper-container li{
+        height: 300px;
+    }
+    .banner .box{
+        width: 100%;
+    }
+
+    .banner .left_box{
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        position: static;
+    }
+
+    .banner .right_box{
+        display: none;
+    }
+
+    #banner .video_btn{
+        bottom: 24px;
+        left: 60px;
+    }
+
+    .speclal .box{
+        width: auto;
+        padding: 40px 20px;
+    }
+
+    .speclal .en_title img{
+        width: 100%;
+    }
+
+    .speclal ul{
+
+        margin: 20px 0px 0px 0px;
+    }
+
+    .speclal ul li{
+        width: 50%;
+        margin-top:20px;
+    }
+
+    .speclal ul li{
+        margin-right: auto;
+    }
+
+    .speclal ul  li:nth-child(3){
+        display: none;
+    }
+
+    .speclal ul li .detail{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .core .box{
+        width: auto;
+        padding: 40px 20px;
+    }
+
+    .core .box .title_box img{
+        width: 100%;
+    }
+
+    .core .box ul{
+        margin: 0px;
+        margin: 40px 0px 0px 0px;
+    }
+    .core .box li{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .core .box li img{
+        width: 100%;
+    }
+
+    .about{
+        height: 100%;
+    }
+    .about .box{
+        width: auto;
+        padding: 0px 20px;
+    }
+
+    .about .box .title img{
+        width: 100%;
+        margin-top:40px;
+    }
+
+    .about .box .about_box{
+        margin-top: 20px;
+    }
+    .about .box .left_box{
+        display: none !important;
+    }
+
+    .about .box .right_box{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .about .box .right_box .title{
+        margin:auto;
+    }
+
+    .about .box .right_box .detail{
+        margin-left:auto;
+        padding: 16px 0px;
+    }
+
+    .partner .box{
+        padding: 0px 20px;
+        width: auto;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .partner .box .en_title img{
+        margin-top: 40px;
+    }
+
+    .footer .box{
+        width: auto;
+    }
+
+    .partner .box .partner_box{
+        width: 100%;
+    }
+    .footer .box .left_box{
+        width: 100%;
+    }
+
+    .footer .box .right_box{
+        display: none;
+    }
+
+    .footer .box .left_box .address_box{
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .footer .box .left_box .wechat_box{
+        text-align: center;
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        display: none;
+    }
+
+    .map{
+        height: auto;
+    }
+
+    #allmap{
+        display: none;
+    }
+
+    .onlin_test{
+        width: auto;
+        position: static;
+        padding: 20px;
+        height: auto;
+    }
+
+    .onlin_test .text textarea{
+        width: 100%;
+        padding-left:0px;
+    }
+
+    .right_pendant{
+        margin-top: 0px;
+    }
+
+    /** start **/
+    .news{
+        width: 100%;
+    }
+    .news .news_nav{
+        display: none;
+    }
+
+    .news .news_list .item{
+        padding: 15px;
+    }
+    .news .news_list .item .img_box{
+        width: 30%;
+    }
+
+    .news .news_list .content_box{
+        padding: 0px 0px 0px 10px;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .news_list .content_box .btn{
+        display: none;
+    }
+
+    .news_list .time_box{
+        display: none;
+    }
+
+    .news .news_list img{
+        width: 100%;
+        height: auto;
+    }
+
+    .news .news_list .content_box{
+        width: 70%;
+    }
+
+    .news_list .content_box .detail{
+        height: 44px;
+        overflow: hidden;
+        margin-top: 4px;
+    }
+
+    .news_list .content_box .title a{
+        font-size: 14px;
+    }
+
+    .news_list .content_box .date{
+        display: inline-block;
+    }
+
+
+
+    .news .news_list{
+        margin-top: 20px;
+    }
+    .news_content_box h2{
+        font-size: 20px;
+        padding-top:25px
+    }
+
+    .news_content_box .detail{
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .news_content_box .content{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .news_content_box .content img{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .news_content .news_content_box{
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .layui-m-layercont video{
+        width:100%;
+        height: 280px
+    }
+
+    .breadcrumb{
+        width: auto;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1526px) {
+    .header .left_box{
+        width: 210px;
+    }
+
+    .header .logo img{
+        width: 100%;
+    }
+}
