@@ -9,8 +9,8 @@
 <{/block}>
 
 <{block "head-scripts-bootstrap"}>
-	<script src="<{'js/bootstrap3/bootstrap.min.js'|static}>"></script>
-<{/block}>
+
+	<{/block}>
 
 <{block "head-scripts-inner"}><{/block}>
 
