@@ -25,6 +25,10 @@
 <{block "head-scripts-bbq"}>
 <script src="<{'js/jquery.bbq.min.js'|static}>"></script>
 <{/block}>
+<{block "head-scripts-vue"}>
+	<script src="<{'js/vue/vue.min.js'|static nofilter}>"></script>
+	<script src="<{'js/vue/vuex.min.js'|static nofilter}>"></script>
+	<{/block}>
 <{block "head-scripts-common"}>
 <script src="<{'js/common-2.0.js'|static}>"></script>
 <{/block}>

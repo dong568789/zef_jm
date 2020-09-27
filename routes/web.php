@@ -20,13 +20,23 @@ $router->post('form/send-sms', 'HomeController@sendSms');
 $router->group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['auth', 'role:administrator']], function($router) {
 
     $router->get('company/test', 'CompanyController@test');
-
     $router->post('company/importQuery', 'CompanyController@import');
 	$router->post('company/importService', 'CompanyController@importService');
 	$router->crud([
 		'member' => 'MemberController',
 		'consult' => 'ConsultController',
 	]);
+
+    $router->crud([
+        'article' => 'ArticleController',
+    ]);
+
+    $router->crud([
+        'site' => 'SiteController',
+    ]);
+    $router->crud([
+        'ad' => 'AdController',
+    ]);
 
 	$router->get('/', 'HomeController@index');
 });

@@ -22,6 +22,14 @@
 
 					</ul>
 				</li>
+
+				<li><a href="<{'admin/web/article'|url}>" name="web/article/list"><i class="fa
+		fa-binoculars
+	pull-right"></i> 新闻管理</a></li>
+				<li><a href="<{'admin/web/category/1'|url}>" name="web/category/list"><i class="fa fa-binoculars
+	pull-right"></i> 分类管理</a></li>
+				<li><a href="<{'admin/web/setting/1/edit'|url}>" name="web/setting/list"><i class="fa fa-binoculars
+	pull-right"></i> 网站设置</a></li>
 				<li>
 					<a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator"></i><i class="gi gi-user sidebar-nav-icon"></i>会员管理</a>
 					<ul>
