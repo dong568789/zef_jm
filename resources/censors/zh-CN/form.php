@@ -2,19 +2,19 @@
 
 return [
 	'store' => [
-		'exp' => [
-			'name' => '是否有电商运营经验',
+		'sex' => [
+			'name' => '性别',
+			'rules' => 'nullable',
+		],
+		'email' => [
+			'name' => '邮箱',
+			'rules' => 'email|nullable',
+		],
+		'area' => [
+			'name' => '地区',
 			'rules' => 'required',
 		],
-		'product' => [
-			'name' => '是否有货源',
-			'rules' => 'required',
-		],
-		'time' => [
-			'name' => '每天空闲时间',
-			'rules' => 'required',
-		],
-		'nickname' => [
+		'realname' => [
 			'name' => '姓名',
 			'rules' => 'required',
 		],
