@@ -43,4 +43,9 @@ class CatalogRepository extends BaseCatalogRepository {
     {
         return Catalog::get();
     }
+
+    public function findByName($name, $force = false)
+    {
+        return $this->all()->where('name', '=', $name)->first();
+    }
 }

@@ -22,6 +22,7 @@ class CreateArticlesTable extends Migration
             $table->unsignedInteger('recommend')->default(102)->comment="推荐";
             $table->unsignedInteger('avatar_aid')->nullable()->index()->comment="图片id";
             $table->string('source',50)->comment="来源";
+            $table->unsignedInteger('article_status')->comment="状态";
             $table->integer('click')->default(0)->comment="点击量";
 
             $table->timestamps();
