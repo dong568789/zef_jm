@@ -11,18 +11,18 @@
 <{block "table-th-plus"}>
 <th>姓名</th>
 <th>电话</th>
-<th>客户信息</th>
+<th>性别</th>
+<th>邮箱</th>
+<th>地址</th>
 <{/block}>
 
 <!-- DataTable的Block -->
 <{block "table-td-plus"}>
-<td data-from="nickname">{{data}}</td>
+<td data-from="realname">{{data}}</td>
 <td data-from="mobile">{{data}}</td>
-<td data-from="info_item" data-orderable="false">
-{{each data as v k}}
-<span class="label label-info">{{v}}</span>
-{{/each}}
-</td>
+<td data-from="sex">{{data}}</td>
+<td data-from="email">{{data}}</td>
+<td data-from="area">{{data}}</td>
 <{/block}>
 <{block "table-th-options"}><{/block}>
 <{block "table-td-options"}><{/block}>

@@ -2,15 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Repositories\ConsultRepository;
 use App\Tools\Sms;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-
 use App\Tools\PhoneVerify;
 
-class HomeController extends Controller
+use App\Repositories\ConsultRepository;
+
+class HomeController extends CoreController
 {
 	/**
 	 * Display a listing of the resource.
@@ -24,23 +23,17 @@ class HomeController extends Controller
 
 	public function query(Request $request)
 	{
-		$keys = ['exp', 'product', 'time', 'nickname', 'mobile', 'code'];
+		$keys = ['realname', 'sex', 'area', 'email', 'mobile', 'code'];
 		$data = $this->censor($request, 'form.store', $keys);
 
 		$phoneVerify = new PhoneVerify($data['mobile']);
 		$result = $phoneVerify->verify($data['code']);
        // $result = true;
-		if(!$result) return $this->error('验证码错误!');
+		//if(!$result) return $this->error('验证码错误!');
 
         $cRepo = new ConsultRepository();
 
-        $infoKey = ['exp', 'product', 'time'];
-        $infoData = array_only($data, $infoKey);
-
-        array_push($infoKey, 'code');
-
-        $data = array_except($data, $infoKey);
-        $data['info'] = json_encode($infoData);
+        $data = array_except($data, ['code']);
         $cRepo->store($data);
 		logger()->info(print_r($data, 1));
 

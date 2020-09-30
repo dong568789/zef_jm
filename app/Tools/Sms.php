@@ -28,13 +28,16 @@ class Sms{
             'text' => "【佐尔发】" . $content,
         );
 
-        $client = new Client();
-        $response = $client->request('POST', $url, ['form_params' => $param]);
+        try{
+            $client = new Client();
+            $response = $client->request('POST', $url, ['form_params' => $param]);
+            $body = (string)$response->getBody();
+            $result = json_decode($body, true);
+            logger()->info("短信发送:" . print_r($result, 1));
+        }catch (\Exception $e){
+            return ['Code' => 'fail'];
+        }
 
-        $body = (string)$response->getBody();
-        $result = json_decode($body, true);
-
-        logger()->info("短信发送:" . print_r($result, 1));
         if(isset($result['code']) && $result['code'] == 0)
         {
             return ['Code' => 'ok'];

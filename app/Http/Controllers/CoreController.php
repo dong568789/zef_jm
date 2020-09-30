@@ -1,16 +1,15 @@
 <?php
 
-namespace Plugins\Web\App\Http\Controllers;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 
-use Plugins\Web\App\Category;
+use App\Catalog;
 
-use Plugins\Web\App\Repositories\WebSettingRepository;
+use App\Repositories\SiteRepository;
 
 class CoreController extends Controller {
 
-	public function __construct()
+    public function __construct()
     {
         $this->seo();
     }
@@ -18,15 +17,15 @@ class CoreController extends Controller {
 
     public function seo()
     {
-        $this->_seo = (new WebSettingRepository)->findByCache();
+        $this->_seo = (new SiteRepository)->findByCache();
     }
 
-    public function parsePageSeo(Category $category)
+    public function parsePageSeo(Catalog $category)
     {
         return [
-            'title' => $category->seo_title,
-            'keyword' => $category->seo_keyword,
-            'description' => $category->seo_description
+            'title' => $category->title,
+            'keyword' => $category->keyword,
+            'description' => $category->description
         ];
     }
 }

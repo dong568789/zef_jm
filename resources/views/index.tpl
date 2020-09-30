@@ -4,22 +4,26 @@
     <{/block}>
 
 <{block "body-container"}>
-<div class="header">
-    <div class="logo">
-        <a href="/">
-            <img src="<{'web/images/logo.png'|static}>" alt="">
-        </a>
+<div class="header" id="home">
+    <div class="left_box">
+        <div class="logo">
+            <a href="/">
+                <img src="<{'web/images/logo.png'|static}>" alt="<{$_seo.title}>">
+            </a>
+            <em class="open"></em>
+        </div>
     </div>
-    <div class="nav">
+
+    <div class="nav close">
         <ul>
             <li><a href="/">首页</a></li>
-            <li><a href="/">行业前景</a></li>
-            <li><a href="/">项目优势</a></li>
-            <li><a href="/">品牌介绍</a></li>
-            <li><a href="/">产品体系</a></li>
-            <li><a href="/">合作支持</a></li>
-            <li><a href="/">加盟流程</a></li>
-            <li><a href="/">关于我们</a></li>
+            <li><a href="/#hyqj">行业前景</a></li>
+            <li><a href="/#xmyx">项目优势</a></li>
+            <li><a href="/#ppjs">品牌介绍</a></li>
+            <li><a href="/#cptx">产品体系</a></li>
+            <li><a href="/#hzzc">合作支持</a></li>
+            <li><a href="/#jmlc">加盟流程</a></li>
+            <li><a href="/#about">关于我们</a></li>
         </ul>
     </div>
 </div>
@@ -29,7 +33,7 @@
     </ul>
 </div>
 <div class="main-container">
-    <div class="container">
+    <div class="container" id="hyqj">
         <div class="index_01 index_box">
             <div class="block">
                 <div class="left_block">
@@ -69,7 +73,7 @@
             </div>
         </div>
     </div>
-    <div class="container" style="margin-top: 60px;">
+    <div class="container" style="margin-top: 60px;" id="xmyx">
         <div class="index_02 index_box">
             <div class="title">
                 <p>特色N+1种合作模式</p>
@@ -125,7 +129,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" id="ppjs">
         <div class="index_03 index_box">
             <div class="block">
                 <img src="<{'web/images/index_mfkc.jpg'|static}>" alt="">
@@ -253,7 +257,7 @@
         </div>
     </div>
     <!-- 关于我闪 -->
-    <div class="container">
+    <div class="container" id="about">
         <div class="index_05 index_box">
             <div class="title">
                 <p>关于卓尔发</p>
@@ -315,11 +319,9 @@
                 <form action="">
                     <p class="title">申请信息</p>
                     <div class="left_block">
-                        <p class="input-block index_area">
-                            <label for="">*省/市：</label>
-                            <input type="text" name="province" value="" placeholder="省份">
-                            <input type="text" name="city" value="" placeholder="市">
-                            <input type="text" name="area" value="" placeholder="区">
+                        <p class="input-block">
+                            <label for="">*省/市/区：</label>
+                            <input type="text" name="area" id="area" value="" placeholder="省/市/区">
                         </p>
                         <p class="input-block">
                             <label for="">*投资人姓名：</label>
@@ -340,7 +342,7 @@
                         <div style="float: right;">
                             <p class="input-block">
                                 <label for="">邮箱：</label>
-                                <input type="text" name="email" value="email">
+                                <input type="text" name="email" id="email" value="">
                             </p>
                             <p class="input-block">
                                 <label for="">姓别：</label>
@@ -357,7 +359,7 @@
                     <div class="clear"></div>
                     <p class="title" style="margin-bottom:10px;">其它信处+</p>
                     <p class="xieyi"><input type="checkbox" name="xieyi" id="xieyi" checked="checked">我愿意接受左尔发品牌指导</p>
-                    <button>免费索取资料</button>
+                    <button type="button" class="submit-btn">免费索取资料</button>
 
                 </form>
             </div>
@@ -370,30 +372,25 @@
     <script>
         (function($){
             $('.submit-btn').click(function(){
-                var strExp = $('#exp').val();
-                var strProduct = $('#product').val();
-                var strTime = $('#time').val();
-                var strNickname = $('#nickname').val();
+                var strArea = $('#area').val();
+                var strRealname = $('#realname').val();
+                var strEmail = $('#email').val();
+                var strSex = $('input[type=radio]:checked').val();
                 var strMobile = $('#mobile').val();
                 var intCode = $('#code').val();
 
-                if(strExp == ''){
-                    msg("请输入1.是否有电商运营经验？");
+                if(strArea == ''){
+                    msg("请输入省/市/区");
                     return ;
                 }
 
-                if(strProduct == ''){
-                    msg("请输入2.是否有货源？");
+                if(strSex == ''){
+                    msg("请选择性别");
                     return ;
                 }
 
-                if(strTime == ''){
-                    msg("请输入3.每天空闲时间？");
-                    return ;
-                }
-
-                if(strNickname == ''){
-                    msg("请输入姓名");
+                if(strRealname == ''){
+                    msg("请输入投资人姓名");
                     return ;
                 }
 
@@ -407,22 +404,20 @@
                     return ;
                 }
 
-
                 if(!$('#xieyi').is(':checked')){
                     msg("请先同意协议");
                     return ;
                 }
 
                 var params = {
-                    exp: strExp,
-                    product: strProduct,
-                    time: strTime,
+                    area: strArea,
+                    realname: strRealname,
+                    email: strEmail,
+                    sex: strSex,
                     mobile: strMobile,
-                    nickname: strNickname,
                     code: intCode
                 };
                 LP.query('post', '/home/query', params).then(function(response){
-                    console.log(response, 123);
                     if(response.result == 'success') {
                         msg("感谢您的提交，稍后工作人员会致电您。");
 
@@ -460,11 +455,12 @@
                     if(response.result == 'success') {
                         phone_code_generator_countdown = 60;
                     }else{
-                        msg(response.message);
+                        phone_code_generator_countdown = 60;
                     }
                     return true;
                 },function(e){
-                    msg(e.message);
+                    phone_code_generator_countdown = 60;
+
                 });
             });
 
@@ -487,6 +483,16 @@
                     ,time: 2 //2秒后自动关闭
                 });
             }
+
+            $('.logo em', '#home').click(function(){
+                if($(this).hasClass('open')){
+                    $(this).addClass('close').removeClass('open');
+                    $('.nav', '#home').addClass('open').removeClass('close');
+                }else{
+                    $(this).addClass('open').removeClass('close');
+                    $('.nav', '#home').addClass('close').removeClass('open');
+                }
+            });
         })(jQuery);
 
     </script>

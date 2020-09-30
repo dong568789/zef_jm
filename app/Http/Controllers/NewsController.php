@@ -27,19 +27,19 @@ class NewsController extends CoreController {
 
         $this->_SEO = $this->parsePageSeo($category);
         $this->_nav = "news";
-		return $this->view('web::list');
+		return $this->view('list');
 	}
 
 
 	public function show(Request $request, $id)
     {
         $aRepo = new ArticleRepository();
-        $cRepo = new CategoryRepository();
+        $cRepo = new CatalogRepository();
 
         $article = $aRepo->findOrFail($id);
 
         $article->increment('click');
-        $category = $cRepo->find($article->cid);
+        $category = $cRepo->find($article->site->id);
 
         $this->_article = $article;
         $this->_category = $category;
@@ -49,6 +49,6 @@ class NewsController extends CoreController {
             'keyword' => $article->title,
             'description' => $article->seo_description
         ];
-        return $this->view('web::show');
+        return $this->view('show');
     }
 }

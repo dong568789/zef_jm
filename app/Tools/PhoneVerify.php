@@ -9,7 +9,7 @@ class PhoneVerify {
 
 	protected $phone;
 	protected $session_name;
-	protected $reGenerator = 60; // 多少秒内只能获取一次
+	protected $reGenerator = 1; // 多少秒内只能获取一次
 	protected $expired = 120; // 验证码过期秒数
 	protected $length = 6; // 验证码长度
 	protected $maxTimes = 10; //获取新的验证码之前, 只能重试10次错误
