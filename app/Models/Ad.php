@@ -12,7 +12,7 @@ class Ad extends Model
 
     protected $table = 'ads';
 
-    protected $fillable = ['title', 'pid', 'avatar_aid', 'url', 'sort', 'status', 'value'];
+    protected $guarded = ['id'];
 
     protected $casts = [
         'avatar_aid' => 'attachment',

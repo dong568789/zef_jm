@@ -15,6 +15,7 @@
 <th>推荐</th>
 <th>点击量</th>
 <th>排序</th>
+<th>状态</th>
 <{/block}>
 
 <!-- DataTable的Block -->
@@ -24,6 +25,8 @@
 <td data-from="str_recommend">{{data}}</td>
 <td data-from="click">{{data}}</td>
 <td data-from="sort">{{data}}</td>
+    <td data-from="article_status">{{data.title}}</td>
+
 <{/block}>
 
 <{block "table-td-options-delete-confirm"}>您确定删除这项：{{full.username}}吗？<{/block}>

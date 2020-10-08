@@ -17,6 +17,9 @@ $router->get('/', 'HomeController@index');
 $router->post('home/query', 'HomeController@query');
 $router->post('form/send-sms', 'HomeController@sendSms');
 
+$router->get('news/{name}.html', 'NewsController@index')->where('name', '[a-z]+');
+$router->get('news/show/{id}.html', 'NewsController@show')->where('id', '[0-9]+');
+
 $router->group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['auth', 'role:administrator']], function($router) {
 
     $router->get('company/test', 'CompanyController@test');

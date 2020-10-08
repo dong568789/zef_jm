@@ -38,5 +38,9 @@ return [
             'name' => '文章内容',
             'rules' => '',
         ],
+        'article_status' => [
+            'name' => '状态',
+            'rules' => 'required',
+        ],
     ],
 ];

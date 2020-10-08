@@ -1,32 +1,12 @@
 <{extends file="extends/main.block.tpl"}>
+<{include file="common/title.inc.tpl"}>
+
 <{block "head-plus"}>
 
     <{/block}>
 
 <{block "body-container"}>
-<div class="header" id="home">
-    <div class="left_box">
-        <div class="logo">
-            <a href="/">
-                <img src="<{'web/images/logo.png'|static}>" alt="<{$_seo.title}>">
-            </a>
-            <em class="open"></em>
-        </div>
-    </div>
-
-    <div class="nav close">
-        <ul>
-            <li><a href="/">首页</a></li>
-            <li><a href="/#hyqj">行业前景</a></li>
-            <li><a href="/#xmyx">项目优势</a></li>
-            <li><a href="/#ppjs">品牌介绍</a></li>
-            <li><a href="/#cptx">产品体系</a></li>
-            <li><a href="/#hzzc">合作支持</a></li>
-            <li><a href="/#jmlc">加盟流程</a></li>
-            <li><a href="/#about">关于我们</a></li>
-        </ul>
-    </div>
-</div>
+<{include file="common/header.inc.tpl"}>
 <div class="banner">
     <ul>
         <li><img src="<{'web/images/banner.jpg'|static}>" alt=""></li>
@@ -245,7 +225,7 @@
         <img src="<{'web/images/24.jpg'|static}>" alt="">
     </div>
     <!-- 加入我们 -->
-    <div class="container">
+    <div class="container" id="jmlc">
         <div class="block index_box index_lc">
             <img src="<{'web/images/28.jpg'|static}>" alt="">
         </div>
@@ -366,6 +346,8 @@
         </div>
     </div>
 </div>
+    <{include file="common/footer.inc.tpl"}>
+
     <{/block}>
 <{block "body-scripts"}>
     <script type="text/javascript" src="<{'js/layer/mobile/layer.js'|static}>"></script>

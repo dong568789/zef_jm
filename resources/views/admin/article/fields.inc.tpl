@@ -39,6 +39,17 @@
 			</div>
 		</div>
 		<div class="form-group">
+			<label class="col-md-3 control-label" for="banned_status">状态</label>
+			<div class="col-md-9">
+				<{foreach catalog_search('status.article_status', 'children') as $v}>
+				<label class="radio-inline">
+					<input type="radio" name="article_status" value="<{$v.id}>" <{if (!empty($_data.article_status)&&$_data.article_status.id == $v.id)}>checked="checked"<{/if}> > <{$v.title}>
+				</label>
+				<{/foreach}>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="form-group">
 			<label class="col-md-3 control-label" for="click">点击量</label>
 			<div class="col-md-9">
 				<input type="text" id="click" name="click" class="form-control" placeholder="请输入点击量" value="<{$_data.click}>">

@@ -13,7 +13,7 @@ class ArticleController extends Controller
 {
     use ApiTrait;
 
-    protected $keys = ['title', 'site', 'description', 'sort', 'recommend', 'avatar_aid', 'source', 'click', 'content'];
+    protected $keys = ['title', 'site', 'description', 'sort', 'recommend', 'avatar_aid', 'source', 'click', 'content', 'article_status'];
 
 
     /**

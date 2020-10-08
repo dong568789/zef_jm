@@ -9,11 +9,12 @@ class Article extends Model
 {
     use CatalogCastTrait, AttachmentCastTrait;
 
-    protected $fillable = ['title', 'site', 'description', 'sort', 'recommend', 'avatar_aid', 'source', 'click'];
+    protected $guarded = ['id'];
 
     protected $casts = [
         'site' => 'catalog',
         'avatar_aid' => 'attachment',
+        'article_status' => 'catalog',
     ];
 
     public function extra()

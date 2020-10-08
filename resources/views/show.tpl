@@ -1,12 +1,12 @@
 <{extends file="extends/main.block.tpl"}>
-<{include file="[web]common/title.inc.tpl"}>
+<{include file="common/title.inc.tpl"}>
 <{block "head-styles"}>
-    <{include file="[web]common/styles.inc.tpl"}>
+    <{include file="common/styles.inc.tpl"}>
     <{/block}>
 <{block "head-styles-plus"}><link rel="stylesheet" href="<{'web/css/news.css'|static}>"><{/block}>
 
 <{block "body-container"}>
-    <{include file="[web]common/header.inc.tpl"}>
+    <{include file="common/header.inc.tpl"}>
 
     <div class="news_banner">
         <img src="<{null|attachment}>/<{$_category->cover_id}>" alt="">
@@ -19,13 +19,12 @@
             <h2 class="title"><{$_article->title}></h2>
             <p class="date">发布时间：<{substr($_article->created_at,0,10)}></p>
             <div class="detail">
-                <{$_article->seo_description}>
+                <{$_article->description}>
             </div>
             <div class="content">
                 <{$_article->extra->content nofilter}>
             </div>
         </div>
     </div>
-    <{include file="[web]common/footer.inc.tpl"}>
-    <{include file="[web]common/right_nav.inc.tpl"}>
+    <{include file="common/footer.inc.tpl"}>
 <{/block}>

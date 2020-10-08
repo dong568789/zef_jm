@@ -10,7 +10,9 @@ class Site extends Model
 {
     use CatalogCastTrait, AttachmentCastTrait;
 
-    protected $fillable = ['title', 'keywords', 'description', 'logo', 'tel', 'qq', 'wechat', 'number', 'address'];
+    protected $guarded = ['id'];
+
+    const WEB_SETTING = "web_settings";
 
     protected $casts = [
         'logo' => 'attachment',
