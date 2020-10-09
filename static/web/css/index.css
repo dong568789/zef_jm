@@ -97,11 +97,11 @@
     vertical-align: top;
 }
 
-.index_02 .detail_block .index_text_l{
+.index_02 .item .index_text_l .right_box{
     margin: 0px 20px 0px 0px;text-align: right;
 }
 
-.index_02 .detail_block .index_img_r{
+.index_02 .item .index_img_r{
     margin-left: 78px;
 }
 
