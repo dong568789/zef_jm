@@ -56,3 +56,20 @@ li{
     color: #333;
 
 }
+
+.index_tel{
+    display: inline-block;
+    line-height: 100px;
+    float: right;
+    margin-right: 100px;
+    color: #666;
+    font-size: 14px;
+}
+
+.index_tel em{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/tel.png") no-repeat;
+    vertical-align: middle;
+}

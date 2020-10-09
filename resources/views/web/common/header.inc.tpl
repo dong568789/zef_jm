@@ -2,12 +2,12 @@
     <div class="left_box">
         <div class="logo">
             <a href="/">
-                <img src="<{'web/images/logo.png'|static}>" alt="<{$_seo.title}>">
+                <img src="<{null|attachment}>/<{$_seo.logo}>" alt="<{$_seo.title}>">
             </a>
             <em class="open"></em>
         </div>
     </div>
-
+    <p class="index_tel"><em></em>加盟管家热线：<{$_seo.tel}></p>
     <div class="nav close">
         <ul>
             <li class="act"><a href="/">首页</a></li>

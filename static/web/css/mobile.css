@@ -69,6 +69,15 @@
     .header .nav .act{
         background-color: #0BCECE;
     }
+
+    .index_tel{
+        position: absolute;
+        left: 53%;
+        top: 45px;
+        line-height: 0px;
+        font-size: 20px;
+    }
+
     #home div.open{
         display: block;
     }

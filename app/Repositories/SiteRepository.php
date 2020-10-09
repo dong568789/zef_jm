@@ -83,8 +83,8 @@ class SiteRepository extends Repository {
      */
 	public function findByCache($site_id = 1)
     {
-        return Cache::remember(Site::WEB_SETTING . $site_id, config('cache.ttl'), function () use($site_id){
+       // return Cache::remember(Site::WEB_SETTING . $site_id, config('cache.ttl'), function () use($site_id){
             return Site::find($site_id);
-        });
+        //});
     }
 }
