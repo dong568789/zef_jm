@@ -27,7 +27,7 @@ class NewsController extends CoreController {
 
         $this->_SEO = $this->parsePageSeo($category);
         $this->_nav = "news";
-		return $this->view('list');
+		return $this->view('web/list');
 	}
 
 
@@ -49,6 +49,6 @@ class NewsController extends CoreController {
             'keyword' => $article->title,
             'description' => $article->seo_description
         ];
-        return $this->view('show');
+        return $this->view('web/show');
     }
 }

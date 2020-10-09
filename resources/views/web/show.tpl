@@ -1,12 +1,10 @@
-<{extends file="extends/main.block.tpl"}>
-<{include file="common/title.inc.tpl"}>
-<{block "head-styles"}>
-    <{include file="common/styles.inc.tpl"}>
+<{extends file="web/extends/main.block.tpl"}>
+<{include file="web/common/title.inc.tpl"}>
+<{block "head-styles-plus"}>
+<link rel="stylesheet" href="<{'web/css/news.css'|static}>">
     <{/block}>
-<{block "head-styles-plus"}><link rel="stylesheet" href="<{'web/css/news.css'|static}>"><{/block}>
-
 <{block "body-container"}>
-    <{include file="common/header.inc.tpl"}>
+    <{include file="web/common/header.inc.tpl"}>
 
     <div class="news_banner">
         <img src="<{null|attachment}>/<{$_category->cover_id}>" alt="">
@@ -26,5 +24,5 @@
             </div>
         </div>
     </div>
-    <{include file="common/footer.inc.tpl"}>
+    <{include file="web/common/footer.inc.tpl"}>
 <{/block}>

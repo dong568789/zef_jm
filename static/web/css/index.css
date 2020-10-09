@@ -97,6 +97,14 @@
     vertical-align: top;
 }
 
+.index_02 .detail_block .index_text_l{
+    margin: 0px 20px 0px 0px;text-align: right;
+}
+
+.index_02 .detail_block .index_img_r{
+    margin-left: 78px;
+}
+
 .index_02 .item .detail_block .left_order{
     width: 140px;
     height: 140px;

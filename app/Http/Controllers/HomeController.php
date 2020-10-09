@@ -18,7 +18,7 @@ class HomeController extends CoreController
 	 */
 	public function index(Request $request)
 	{
-		return $this->view('index');
+		return $this->view('web/index');
 	}
 
 	public function query(Request $request)

@@ -10,7 +10,7 @@
 
     <div class="nav close">
         <ul>
-            <li><a href="/">首页</a></li>
+            <li class="act"><a href="/">首页</a></li>
             <li><a href="/#hyqj">行业前景</a></li>
             <li><a href="/#xmyx">项目优势</a></li>
             <li><a href="/#ppjs">品牌介绍</a></li>

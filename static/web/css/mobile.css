@@ -14,7 +14,7 @@
 
     .header .left_box{
         width: 100%;
-        height: 60px;
+        height: 100px;
         float: none;
     }
 
@@ -26,7 +26,7 @@
     }
 
     .header .logo img{
-        height: 60px;
+        height: 100px;
         margin-left:20px;
     }
 
@@ -34,7 +34,7 @@
         width: 40px;
         height: 40px;
         float: right;
-        margin-top: 10px;
+        margin: 30px 10px 0px 0px;
     }
 
     .header .logo .open {
@@ -53,7 +53,7 @@
     .header .nav {
         width: 100%;
         position: absolute;
-        top: 60px;
+        top: 100px;
         left: 0px;
         height: auto;
         background-color: #686c7b;
@@ -62,6 +62,12 @@
 
     .header .nav ul{
         float: left;
+        margin-right: 0px;
+        width: 100%;
+    }
+
+    .header .nav .act{
+        background-color: #0BCECE;
     }
     #home div.open{
         display: block;
@@ -83,6 +89,7 @@
         line-height: 60px;
         width: 100%;
         text-align: left;
+        margin-left: 0px;
     }
 
     .header .nav li a{
@@ -99,22 +106,118 @@
 
     .banner{
         clear: both;
+        margin-top: 100px;
     }
 
 
     .banner img{
-        height: 418px;
+        height: auto;
     }
 
+    .container{
+        margin-top: 50px;
+    }
 
-   .container .index_box{
-       width: auto;
+    .container .index_box{
+        width: auto;
+        margin: 0px 2%;
    }
 
-    .index_01 .block .left_block{
-        display: none;
+    .index_01 .block{
+        width: 100%;
+        height: auto;
+        border-radius: 50px;
     }
 
+    .index_01 .block .left_block{
+        margin-left: 25px;
+    }
+
+    .index_01 .block .right_block{
+        line-height: 54px;
+    }
+
+    .index_02 .block .item{
+        float: left;
+    }
+
+    .index_02 .block .item img{
+        width: 40%;
+        float: left;
+    }
+
+    .index_02 .block .item .detail_block{
+        width: 50%;
+        float: left;
+    }
+
+    .index_02 .block .item .index_text_r{
+        margin-left: 6%;
+
+    }
+
+    .index_02 .block .item .index_text_r .right_box{
+        margin-left: 2%;
+    }
+
+    .index_02 .block .item .index_text_l{
+        margin-left: 0px;
+        text-align: right;
+    }
+
+    .index_02 .block .item .index_text_l .right_box{
+        margin: 0px 2% 0px 0px;
+    }
+
+    .index_02 .block .item .index_img_r{
+        margin-left: 6%;
+    }
+
+    .index_02 .item .detail_block .right_box{
+
+    }
+
+    .index_04 .top_block .item{
+        width: 30%;
+    }
+
+    .index_04 .top_block .item img{
+        height: auto;
+    }
+
+    .index_04 .index_04_item .item{
+        width: 48%;
+    }
+
+    .index_04 .index_04_item img{
+        width: 50%;
+    }
+
+    .index_04 .index_04_item .detail_box{
+        width: 40%
+    }
+
+    .index_05 img{
+        width: 40%;
+    }
+
+    .index_05 .about{
+        width: 50%;
+        line-height: 36px;
+    }
+
+    .index_06 .block img{
+        width: 45%;
+        height: auto;
+    }
+
+    .index_06 .block .index_06_box{
+        width: 50%;
+    }
+
+    .index_06 .block .index_06_box .item{
+        margin-bottom: 20px;
+    }
     /** start **/
     .news{
         width: 100%;
