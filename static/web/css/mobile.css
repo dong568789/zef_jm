@@ -228,6 +228,10 @@
         margin-bottom: 20px;
     }
     /** start **/
+
+    .news_banner{
+        margin-top: 100px;
+    }
     .news{
         width: 100%;
     }
