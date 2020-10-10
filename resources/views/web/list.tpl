@@ -7,7 +7,6 @@
 <{block "body-container"}>
     <{include file="web/common/header.inc.tpl"}>
     <div class="news_banner">
-        <img src="<{null|attachment}>/<{$_category->cover_id}>" alt="">
     </div>
     <div class="news">
         <div class="news_nav">
@@ -18,7 +17,7 @@
             <{foreach $_list as $item}>
             <div class="item">
                 <a href="<{url('news/show', [$item->id])}>.html" target="_blank" class="img_box fl">
-                    <img src="<{null|attachment}>/<{$item->cover_id}>" alt="<{$item->title}>">
+                    <img src="<{null|attachment}>/<{$item->avatar_aid}>" alt="<{$item->title}>">
                 </a>
                 <div class="content_box fl">
                     <p class="title"><a href="<{url('news/show', [$item->id])}>.html" target="_blank"><{$item->title}></a></p>
