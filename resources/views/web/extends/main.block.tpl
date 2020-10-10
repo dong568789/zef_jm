@@ -21,7 +21,7 @@
 		<{block "head-styles-before"}><{/block}>
 		<{include file="web/common/styles.inc.tpl"}>
 		<{block "head-styles-plus"}><{/block}>
-		<{block "head-styles-after"}><{/block}>
+		<{block "head-styles-after"}><link rel="stylesheet" href="<{'web/css/mobile.css'|static}>"><{/block}>
 	<{/block}>
 	<{block "head-scripts"}>
 		<{block "head-scripts-before"}><{/block}>
