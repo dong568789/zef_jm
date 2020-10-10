@@ -47,13 +47,13 @@
     border-right: 1px solid #eee;
 }
 
-.news_list .content_box .title a{
+.news_list .content_box .title{
     font-size: 24px;
     color: #333;
     font-weight: 700;
 }
 
-.news_list .content_box .title a:hover{
+.news_list .content_box:hover{
     color: #518dfd;
 }
 .news_list .content_box .date{

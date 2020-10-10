@@ -19,13 +19,11 @@
                 <a href="<{url('news/show', [$item->id])}>.html" target="_blank" class="img_box fl">
                     <img src="<{null|attachment}>/<{$item->avatar_aid}>" alt="<{$item->title}>">
                 </a>
-                <a href="<{url('news/show', [$item->id])}>.html" target="_blank">
-                    <div class="content_box fl">
-                        <p class="title"><a href="<{url('news/show', [$item->id])}>.html" target="_blank"><{$item->title}></a></p>
-                        <p class="detail"><{$item->description}></p>
-                        <p class="date"><{substr($item->created_at, 0, 10)}></p>
-                        <a href="<{url('news/show', [$item->id])}>.html" target="_blank" class="btn">详情</a>
-                    </div>
+                <a href="<{url('news/show', [$item->id])}>.html" target="_blank" class="content_box fl">
+                    <p class="title"><{$item->title}></p>
+                    <p class="detail"><{$item->description}></p>
+                    <p class="date"><{substr($item->created_at, 0, 10)}></p>
+                    <span class="btn">详情</span>
                 </a>
                 <div class="time_box fr">
                     <p class="day"><{substr($item->created_at, 8, 2)}></p>
