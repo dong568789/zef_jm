@@ -21,7 +21,7 @@
                 </a>
                 <div class="content_box fl">
                     <p class="title"><a href="<{url('news/show', [$item->id])}>.html" target="_blank"><{$item->title}></a></p>
-                    <p class="detail"><{$item->seo_description}></p>
+                    <p class="detail"><{$item->description}></p>
                     <p class="date"><{substr($item->created_at, 0, 10)}></p>
                     <a href="<{url('news/show', [$item->id])}>.html" target="_blank" class="btn">详情</a>
                 </div>
