@@ -237,7 +237,7 @@
     <div class="container" id="about">
         <div class="index_05 index_box">
             <div class="title">
-                <p>关于卓尔发</p>
+                <p>关于佐尔发</p>
                 <span></span>
             </div>
             <div class="block">
@@ -335,7 +335,7 @@
                     </div>
                     <div class="clear"></div>
                     <p class="title" style="margin-bottom:10px;">其它信处+</p>
-                    <p class="xieyi"><input type="checkbox" name="xieyi" id="xieyi" checked="checked">我愿意接受左尔发品牌指导</p>
+                    <p class="xieyi"><input type="checkbox" name="xieyi" id="xieyi" checked="checked">我愿意接受佐尔发品牌指导</p>
                     <button type="button" class="submit-btn">免费索取资料</button>
 
                 </form>
