@@ -49,7 +49,7 @@
             </div>
         </div>
     </div>
-    <div class="container" style="margin-top: 60px;" id="xmyx">
+    <div class="container" style="" id="xmyx">
         <div class="index_02 index_box">
             <div class="title">
                 <p>特色N+1种合作模式</p>
