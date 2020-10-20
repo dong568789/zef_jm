@@ -73,3 +73,17 @@ li{
     background: url("../images/tel.png") no-repeat;
     vertical-align: middle;
 }
+
+.footer .copyright{
+    background-color: #000000;
+    width: 100%;
+    text-align: center;
+    height: 65px;
+    margin-top: 30px;
+    line-height: 65px;
+}
+
+.footer .copyright a{
+    color: #5D5D5D;
+    font-size: 14px;
+}
