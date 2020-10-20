@@ -1,6 +1,7 @@
 <div class="footer">
     <div class="copyright">
-        <a href="http://beian.miit.gov.cn" target="_blank">鄂ICP备18010800号-1</a>
+        <span style="font-size: 14px;color: #FFF">Copyright © 2020 <{$_seo.title}></span>
+        <a href="http://beian.miit.gov.cn" target="_blank" style="color: #ccc">鄂ICP备18010800号-1</a>
     </div>
 </div>
 
