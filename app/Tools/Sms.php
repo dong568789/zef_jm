@@ -35,6 +35,7 @@ class Sms{
             $result = json_decode($body, true);
             logger()->info("短信发送:" . print_r($result, 1));
         }catch (\Exception $e){
+            logger()->debug($e->getMessage(), $e->getTrace());
             return ['Code' => 'fail'];
         }
 

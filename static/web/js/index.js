@@ -27,7 +27,19 @@
             return ;
         }
 
+        var patt = /^1[\d]{10}$/
+        if(!patt.test(strMobile)){
+            msg("联系电话格式不正确");
+            return ;
+        }
+
         if(intCode == ''){
+            msg("请输入验证码");
+            return ;
+        }
+
+        var patt2 = /[\d]{6}/;
+        if(!patt2.test(intCode)){
             msg("请输入验证码");
             return ;
         }
@@ -108,7 +120,7 @@
         layer.open({
             content: msg
             ,skin: 'msg'
-            ,time: 2 //2秒后自动关闭
+            ,time: 2000 //2秒后自动关闭
         });
     }
 

@@ -29,7 +29,7 @@ class HomeController extends CoreController
 		$phoneVerify = new PhoneVerify($data['mobile']);
 		$result = $phoneVerify->verify($data['code']);
        // $result = true;
-		//if(!$result) return $this->error('验证码错误!');
+		if(!$result) return $this->error('验证码错误!');
 
         $cRepo = new ConsultRepository();
 
@@ -49,14 +49,14 @@ class HomeController extends CoreController
 		$code = $phoneVerify->generator();
 
 		if ($code === false) // 太频繁的请求
-			$this->error('太频繁的请求');
+			return $this->error('太频繁的请求');
 
 		$content = "验证码：".$code['code']."，有效时间2分钟。";
 		
 		$sms = new Sms();
 		$result = $sms->sendSms($mobile, $content);
 		if($result['Code'] != 'ok'){
-			$this->error('发送失败');
+			return $this->error('发送失败');
 		}
 
 		return $this->success('发送成功');
